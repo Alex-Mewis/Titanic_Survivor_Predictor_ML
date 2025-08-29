@@ -4,7 +4,19 @@
 Using the training set from the [_Titanic - Machine Learning from Disaster_](https://www.kaggle.com/competitions/titanic/overview) competition on kaggle a random forest classifier was trained to predict whether or not someone would survive the Titanic.
 ## Exploring the Data & Finding Correlations
 The first step of developing this model was exploring the provided data. I was interested to see what features where correlated to someones survival. To measure this correlation correlation matrices where generated for discrete features while kernel density plots where made (split on someones survival) where made for continuous features.
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; center;">
+
+
+<p float="left">
+  <img src="./plots/density_plot_Age_Survived.png" width="49%" />
+  <img src="./plots/density_plot_Age_Survived.png" width="49%" /> 
+  <img src="./plots/correlation_matrix_Survived_Embarked.png" alt="correlation_matrix_Survived_Embarked" style="width:49%;">
+  <img src="./plots/correlation_matrix_Survived_Parch.png" alt="correlation_matrix_Survived_Parch" style="width:49%;">
+  <img src="./plots/correlation_matrix_Survived_SibSp.png" alt="correlation_matrix_Survived_SibSp" style="width:49%;">
+  <img src="./plots/correlation_matrix_Survived_Pclass.png" alt="correlation_matrix_Survived_Pclass" style="width:49%;">
+  <img src="./plots/correlation_matrix_Survived_Sex.png" alt="correlation_matrix_Survived_Sex" style="width:49%;">
+</p>
+
+<!-- <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; center;">
  <img src="./plots/density_plot_Age_Survived.png" alt="density_plot_Age_Survived" style="width:100%;">
   <img src="./plots/density_plot_Fare_Survived.png" alt="density_plot_Fare_Survived" style="width:100%;">
   <img src="./plots/correlation_matrix_Survived_Embarked.png" alt="correlation_matrix_Survived_Embarked" style="width:100%;">
@@ -12,7 +24,7 @@ The first step of developing this model was exploring the provided data. I was i
   <img src="./plots/correlation_matrix_Survived_SibSp.png" alt="correlation_matrix_Survived_SibSp" style="width:100%;">
   <img src="./plots/correlation_matrix_Survived_Pclass.png" alt="correlation_matrix_Survived_Pclass" style="width:100%;">
   <img src="./plots/correlation_matrix_Survived_Sex.png" alt="correlation_matrix_Survived_Sex" style="width:100%;">
-</div>
+</div> -->
 
 The dataset provided the cabin numbers of everyone and it was observed some people where not assigned a cabin (the values where `nan`) so another column was added to check if there was a correlation for whether or not someone was assigned a cabin. Additionally, it was noted there was no clear correlation between the number of siblings/spouses aboard (`SibSp`) and the number of parents/children aboard (`Parch`) so another column was added which just checks is someone had any family aboard. Both of these newly calculated columns showed a correlation to the survival rate as shown in the plots below.
 
