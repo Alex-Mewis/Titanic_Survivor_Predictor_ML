@@ -2,6 +2,12 @@
 
 ## Task
 Using the training set from the [_Titanic - Machine Learning from Disaster_](https://www.kaggle.com/competitions/titanic/overview) competition on kaggle a random forest classifier was trained to predict whether or not someone would survive the Titanic.
+## Setup
+To install all of the dependencies run the following command in the main directory of the repo.
+``` 
+py -m pip install -r requirements.txt
+``` 
+
 ## Exploring the Data & Finding Correlations
 The first step of developing this model was exploring the provided data. I was interested to see what features where correlated to someones survival. To measure this correlation correlation matrices where generated for discrete features while kernel density plots where made (split on someones survival) where made for continuous features.
 
