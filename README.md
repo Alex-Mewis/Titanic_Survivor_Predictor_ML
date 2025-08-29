@@ -16,22 +16,13 @@ The first step of developing this model was exploring the provided data. I was i
   <img src="./plots/correlation_matrix_Survived_Sex.png" alt="correlation_matrix_Survived_Sex" style="width:49%;">
 </p>
 
-<!-- <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; center;">
- <img src="./plots/density_plot_Age_Survived.png" alt="density_plot_Age_Survived" style="width:100%;">
-  <img src="./plots/density_plot_Fare_Survived.png" alt="density_plot_Fare_Survived" style="width:100%;">
-  <img src="./plots/correlation_matrix_Survived_Embarked.png" alt="correlation_matrix_Survived_Embarked" style="width:100%;">
-  <img src="./plots/correlation_matrix_Survived_Parch.png" alt="correlation_matrix_Survived_Parch" style="width:100%;">
-  <img src="./plots/correlation_matrix_Survived_SibSp.png" alt="correlation_matrix_Survived_SibSp" style="width:100%;">
-  <img src="./plots/correlation_matrix_Survived_Pclass.png" alt="correlation_matrix_Survived_Pclass" style="width:100%;">
-  <img src="./plots/correlation_matrix_Survived_Sex.png" alt="correlation_matrix_Survived_Sex" style="width:100%;">
-</div> -->
 
 The dataset provided the cabin numbers of everyone and it was observed some people where not assigned a cabin (the values where `nan`) so another column was added to check if there was a correlation for whether or not someone was assigned a cabin. Additionally, it was noted there was no clear correlation between the number of siblings/spouses aboard (`SibSp`) and the number of parents/children aboard (`Parch`) so another column was added which just checks is someone had any family aboard. Both of these newly calculated columns showed a correlation to the survival rate as shown in the plots below.
 
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; center;">
-  <img src="./plots/correlation_matrix_Survived_Assigned Cabin.png" alt="correlation_matrix_Survived_Assigned Cabin" style="width:100%;">
-  <img src="./plots/correlation_matrix_Survived_Family Onboard.png" alt="correlation_matrix_Survived_Family Onboard" style="width:100%;">
-</div>
+<p float="left">
+  <img src="./plots/correlation_matrix_Survived_Assigned Cabin.png" alt="correlation_matrix_Survived_Assigned Cabin" style="width:49%;">
+  <img src="./plots/correlation_matrix_Survived_Family Onboard.png" alt="correlation_matrix_Survived_Family Onboard" style="width:49%;">
+</p>
 
 From all the above plots it can be seen that the following features seems to have some correlation with the chances of survival as described.
 
@@ -86,8 +77,8 @@ validation accuracy = 0.820627802690583
                diff = 0.03865363443516545
 ```
 Additionally, to better see the models predictions a confusion matrix is made for the above two models as shown below.
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; center;">
- <img src="./plots/confusion_matrix_n_estimators=10_max_depth=10.png" alt="density_plot_Age_Survived" style="width:100%;">
-  <img src="./plots/confusion_matrix_n_estimators=100_max_depth=5.png" alt="density_plot_Fare_Survived" style="width:100%;">
-</div>
+<p float="left">
+ <img src="./plots/confusion_matrix_n_estimators=10_max_depth=10.png" alt="density_plot_Age_Survived" style="width:49%;">
+  <img src="./plots/confusion_matrix_n_estimators=100_max_depth=5.png" alt="density_plot_Fare_Survived" style="width:49%;">
+</p>
 Showing the predictions in the two models are not very skewed.
