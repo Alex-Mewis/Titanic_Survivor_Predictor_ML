@@ -31,7 +31,7 @@ The dataset also provided the cabin numbers of everyone and it was observed some
 From all the above plots it can be seen that the following features have some correlation to someones chance of survival. The correlations are as follows:
 
 * `Age:` Young people had a higher change of survival than older people.
-* `Fare:` People who spent $> \approx \$50$ on their ticket have a higher chance of survival.
+* `Fare:` People who spent > $50 on their ticket have a higher chance of survival.
 * `Embarked:` People who embarked on $S$ (Southampton) tended to die more frequently.
 * `Pclass:` $1^{\text{st}}$ class passengers had a higher chance of survival then the lower classes and $3^{\text{rd}}$ class passengers had the lowest chance of survival.
 * `Sex:` Men had a higher chance of dying than women.
